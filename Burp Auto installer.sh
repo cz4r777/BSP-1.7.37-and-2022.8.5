@@ -1,9 +1,13 @@
 #!/bin/bash
+if [[ -e /bin/gnome-terminal || -e /usr/bin/gnome-terminal]]
+then
+    sudo apt install gnome-terminal
+fi
 if [[ -e /home/$USER/BurpSuitePro ]]
  then 
  echo "BurpSuitpro is installed"
  read -p  "Crack Now ?[Y,n] : " crak
-fi
+ fi
 
 if [[ "$crak" != "n" || "$crak" != "N" ]]
  then
