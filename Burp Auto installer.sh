@@ -1,8 +1,8 @@
 #!/bin/bash
-if [[ -e /bin/gnome-terminal || -e /usr/bin/gnome-terminal]]
-then
+if [[ -e /bin/gnome-terminal || -e /usr/bin/gnome-terminal ]]
+ then
     sudo apt install gnome-terminal
-fi
+ fi
 if [[ -e /home/$USER/BurpSuitePro ]]
  then 
  echo "BurpSuitpro is installed"
