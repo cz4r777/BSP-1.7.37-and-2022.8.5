@@ -16,13 +16,13 @@ if [[ "$crak" != "n" || "$crak" != "N" ]]
  gnome-terminal -- bash -c "java -jar /home/$USER/BurpSuitePro/keygen.jar ; exec bash" &
  java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:"/home/$USER/BurpSuitePro/loader.jar" -noverify -jar "/home/$USER/BurpSuitePro/burpsuite_pro.jar"
  cp /home/$USER/BurpSuitePro/BurpSuitePro /home/$USER/BurpSuitePro/BurpSuitePro_org
- echo "java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:\"/home/$USER/BurpSuitePro/loader.jar\" -noverify -jar \"/home/$USER/BurpSuitePro/burpsuite_pro.jar\"" >> /home/$USER/BurpSuitePro/BurpSuitePro
+ echo "java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:\"/home/$USER/BurpSuitePro/loader.jar\" -noverify -jar \"/home/$USER/BurpSuitePro/burpsuite_pro.jar\"" >> /home/$USER/BurpSuitePro/BurpSuitePro ; 
 fi
 if [[ ! -e /home/$USER/BurpSuitePro ]]
-     
+then
     echo "BurpSuitpro is not installed "
     echo "Please install at the /home/$USER/"
-    read -p "Install now ? [Y,n]:" ins
+    read -p "Install now ? [Y,n]:" ins 
 fi
 if [[ $ins -eq "N" || "n" ]]
     then
