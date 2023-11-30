@@ -24,13 +24,14 @@ then
     echo "Please install at the /home/$USER/"
     read -p "Install now ? [Y,n]:" ins 
 fi
-if [[ $ins -eq "N" || "n" ]]
-    then
+if [[ $ins == "N" || $ins ==  "n" ]]
+then
     exit 0;
-    else
+else
     clear
     echo "Please install at the /home/$USER/"
     wget https://portswigger-cdn.net/burp/releases/download?product=pro\&version=2022.8.5\&type=Linux
     bash 'download?product=pro&version=2022.8.5&type=Linux'
     echo "Rerun Script"
 fi
+
