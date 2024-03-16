@@ -57,18 +57,15 @@ Execution and Activation
 **4.1. Use keygen.jar to generate the License key**
 
 ```
-java -jar keygen.jar
+4.2 java -jar Dr-FarFar.jar
 ```
-	
-**4.2. Use BurpSuit**
-```
-java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:"C:\Users\xyz\AppData\Local\Programs\BurpSuitePro\loader.jar" 
--noverify -jar "C:\Users\xyz\AppData\Local\Programs\BurpSuitePro\burpsuite_pro.jar"
+4.3 Dont Update
+
 ```
 - *COMMAND NOT WORKING? Bcz you forget to correct path in command. Example: 'Users\xyz\AppData'*
 
 **5. Activate Burp Suite Pro**
-- 1. Modify License String like "license to GTekSD"
+- 1.
 - 2. Copy License key from keygen.jar and paste in Burp Suite Pro and click Next.
 - 3. Select Manual Activation Option on your bottom Right in Burp Suite Pro.
 - 4. Copy License Request from BurpSuite_Pro and paste in keygen.jar
