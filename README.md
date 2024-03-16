@@ -62,9 +62,11 @@ java -jar keygen.jar
 	
 **4.2. Use BurpSuit**
 ```
-java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:"C:\Users\xyz\AppData\Local\Programs\BurpSuitePro\loader.jar" 
--noverify -jar "C:\Users\xyz\AppData\Local\Programs\BurpSuitePro\burpsuite_pro.jar"
-```
+#java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:"C:\Users\xyz\AppData\Local\Programs\BurpSuitePro\loader.jar" 
+#-noverify -jar "C:\Users\xyz\AppData\Local\Programs\BurpSuitePro\burpsuite_pro.jar"
+`
+
+``
 - *COMMAND NOT WORKING? Bcz you forget to correct path in command. Example: 'Users\xyz\AppData'*
 
 **5. Activate Burp Suite Pro**
